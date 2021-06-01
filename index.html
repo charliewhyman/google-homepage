@@ -3,45 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <title>Google</title>
-        <style>
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                color: black;
-                font-family: Arial, Helvetica, sans-serif;
-                }
-
-            li {
-                float: left;
-            }
-
-            li a {
-                display: block;
-                color: black;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
-
-            #logo {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                width: 50%;
-            }
-            #searchbox {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                width: 50%;
-                border-color: grey;
-                border-radius: 40px;
-                width: 50%
-            }
-
-        </style>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        
 
     </head>
 
@@ -56,11 +20,26 @@
 
         <div class="logo">
             <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
-            <form>
-                <input type="text" id="searchbox" name="searchbox">
-            </form>
-            
         </div>
+
+        <div class="searchbar">
+            <form>
+                <i classs="searchicon" class="material-icons">search</i>
+                <input type="text" class="searchbox" name="search">
+            </form>
+        </div>
+
+        <div class="footer">
+            <ul>
+                <li><a href="">Advertising</a></li>
+                <li><a href="">Business</a></li>
+                <li><a href="">How Search works</a></li>
+                <li style="float:left"><a class="active" href="#about">Carbon neutral since 2007</a></li>
+                <li style="float:right"><a class="active" href="#about">Privacy</a></li>
+                <li style="float:right"><a class="active" href="#about">Terms</a></li>
+                <li style="float:right"><a class="active" href="#about">Settings</a></li>
+              </ul>
+            </div>
     </body>
 
 
