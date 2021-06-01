@@ -59,12 +59,13 @@ li a {
     background-color: #f8f9fa;
     font-size: 14px;
     color: #3c4043;
+    margin-bottom: 100px;
     
 }
 
 .footer {
-    position: absolute;
-    bottom: 0;
     display: flex;
     justify-content: space-evenly;
+    height: 50px;
+    margin-top: -50px;
 }
