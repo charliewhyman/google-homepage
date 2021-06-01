@@ -4,8 +4,20 @@
         <meta charset="UTF-8">
         <title>Google</title>
         <style>
-            .logo {
-                align-items: center;
+            #logo {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+            #searchbox {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+                border-color: grey;
+                border-radius: 40px;
+                width: 50%
             }
 
         </style>
@@ -14,9 +26,8 @@
 
     <body>
         <div>
-            <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+            <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
             <form>
-                <label for="searchbox">Search box</label>
                 <input type="text" id="searchbox" name="searchbox">
             </form>
             
