@@ -70,7 +70,7 @@ body {
 }
 
 .search-buttons {
-    min-width: 100px;
+    min-width: 120px;
     width: 20%;
     height: 40px;
     border-width: 0px;
@@ -78,8 +78,9 @@ body {
     font-size: 14px;
     color: #3c4043;
     margin-bottom: 100px;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 5%;
+    text-align: center;
+    
 }
 
 .footer {
