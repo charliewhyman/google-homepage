@@ -1,23 +1,32 @@
-ul {
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+.navbar-text {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     }
 
-li {
+.navbar-text li {
     float: left;
 }
 
-li a {
+.navbar-text li a {
     display: block;
-    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    color: #222222;
+
 }
 
 .logo {
@@ -25,30 +34,39 @@ li a {
     justify-content: center;
     margin-top: 50px;
 }
+
 .search-container {
     margin-top: 25px;
     display: flex;
-    align-items: center;
     height: 40px;
-    justify-content: center;
+    justify-content: space-between;
+    align-content: center;
   }
+
+.form {
+    flex: 1;
+    align-content: center;
+    display: flex;
+    position: relative;
+}
 
 .material-icons {
+    transform: translateX(120%);
+    align-self: center;
+    opacity: 0.3;
   }
 
-.searchbox {
-   flex: 0 0 75%;
-   height: 30px;
-   border-radius: 10px;
-   border-width: 1px;
-   margin-left: auto;
-   margin-right: auto;
+  .search-input {
+    flex: 0 0 85%;
+    border: 1px solid rgb(223, 225, 229);
+    border-radius: 40px;
+    padding-left: 40px;
   }
 
 .button-container {
     display: flex;
     padding-top: 25px;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .search-buttons {
@@ -60,12 +78,37 @@ li a {
     font-size: 14px;
     color: #3c4043;
     margin-bottom: 100px;
-    
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .footer {
+    margin-top: auto;
+    width: 100%;
     display: flex;
-    justify-content: space-evenly;
-    height: 50px;
-    margin-top: -50px;
+    justify-content: space-around;
+    flex-shrink: 0;
+    background-color: #f2f2f2;
+}
+
+.footer-text {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.footer-text li {
+    float: left;
+}
+
+.footer-text li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color : #70757a;
+
 }
